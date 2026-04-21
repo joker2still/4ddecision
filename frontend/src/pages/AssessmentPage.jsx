@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ScoreSlider from "../components/ScoreSlider.jsx";
 import { personalityOptions } from "../constants/personalityOptions.js";
 import { useLanguage } from "../contexts/LanguageContext.jsx";
+import { loadAnonymousId } from "../services/anonymousId.js";
 import { saveDecisionResult, submitDecisionScore } from "../services/decisionApi.js";
 import {
   DEFAULT_PERSONALITY_TYPE,
@@ -74,7 +75,12 @@ export default function AssessmentPage() {
     try {
       const multiplier = formState.scale_type === "ten" ? 10 : 1;
       const result = await submitDecisionScore({
+        anonymous_id: loadAnonymousId(),
         personality_type: formState.personality_type,
+        scale_type: formState.scale_type,
+        input_past_score: formState.past_score,
+        input_present_score: formState.present_score,
+        input_future_score: formState.future_score,
         past_score: formState.past_score * multiplier,
         present_score: formState.present_score * multiplier,
         future_score: formState.future_score * multiplier,
