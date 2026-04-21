@@ -77,7 +77,7 @@ class DecisionScoreRequest(BaseModel):
 class DecisionScoreResponse(BaseModel):
     score: float
     weights: dict[str, float]
-    decision: Literal["go_do_it", "not_now"]
+    decision: Literal["go_for_it", "not_now"]
     message: str
 
 
@@ -164,12 +164,12 @@ def calculate_decision_score(
         + payload.future_score * weights["future"],
         2,
     )
-    decision: Literal["go_do_it", "not_now"] = (
-        "go_do_it" if score > 50 else "not_now"
+    decision: Literal["go_for_it", "not_now"] = (
+        "go_for_it" if score > 50 else "not_now"
     )
     message = (
         "Current weighted score supports taking action now."
-        if decision == "go_do_it"
+        if decision == "go_for_it"
         else "Current weighted score suggests waiting for a better timing."
     )
 

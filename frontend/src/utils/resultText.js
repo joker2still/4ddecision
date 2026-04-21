@@ -1,6 +1,6 @@
 export function getDecisionLabel(decision, language) {
   if (language !== "zh") {
-    if (decision === "go_do_it") {
+    if (decision === "go_for_it") {
       return "go for it";
     }
 
@@ -11,7 +11,7 @@ export function getDecisionLabel(decision, language) {
     return decision;
   }
 
-  if (decision === "go_do_it") {
+  if (decision === "go_for_it") {
     return "\u53bb\u505a\u5427";
   }
 
