@@ -1,12 +1,14 @@
 import os
 import uuid
-from datetime import datetime, timezone
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 from sqlalchemy import DateTime, Float, String, Text, create_engine
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, sessionmaker
 
 
 DATABASE_URL = os.getenv("DATABASE_URL")
+SHANGHAI_TIMEZONE = ZoneInfo("Asia/Shanghai")
 
 
 class Base(DeclarativeBase):
@@ -21,7 +23,7 @@ class DecisionLog(Base):
     )
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True),
-        default=lambda: datetime.now(timezone.utc),
+        default=lambda: datetime.now(SHANGHAI_TIMEZONE),
         nullable=False,
     )
     anonymous_id: Mapped[str | None] = mapped_column(String(64))
