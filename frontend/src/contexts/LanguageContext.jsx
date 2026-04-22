@@ -48,9 +48,9 @@ const translations = {
       eyebrow: "Result",
       emptyTitle: "No assessment result yet",
       emptyDescription:
-        "Submit an assessment first, then the backend response will be shown here.",
+        "Submit an assessment first, then the result will be shown here.",
       goAssessment: "Go to Assessment",
-      title: "Latest decision output",
+      title: "Latest decision",
       nextStep: "Next Step",
       nextDescription:
         "Adjust the input scores or switch personality type if you want to compare different weighting strategies.",
@@ -115,9 +115,9 @@ const translations = {
       eyebrow: "\u7ed3\u679c",
       emptyTitle: "\u8fd8\u6ca1\u6709\u8bc4\u4f30\u7ed3\u679c",
       emptyDescription:
-        "\u8bf7\u5148\u5b8c\u6210\u4e00\u6b21\u8bc4\u4f30\uff0c\u968f\u540e\u8fd9\u91cc\u4f1a\u5c55\u793a\u540e\u7aef\u8fd4\u56de\u7684\u7ed3\u679c\u3002",
+        "\u8bf7\u5148\u5b8c\u6210\u4e00\u6b21\u8bc4\u4f30\uff0c\u968f\u540e\u8fd9\u91cc\u4f1a\u663e\u793a\u7ed3\u679c\u3002",
       goAssessment: "\u524d\u5f80\u8bc4\u4f30",
-      title: "\u6700\u65b0\u51b3\u7b56\u8f93\u51fa",
+      title: "\u6700\u65b0\u51b3\u7b56",
       nextStep: "\u4e0b\u4e00\u6b65",
       nextDescription:
         "\u5982\u679c\u4f60\u60f3\u6bd4\u8f83\u4e0d\u540c\u6743\u91cd\u7b56\u7565\uff0c\u53ef\u4ee5\u91cd\u65b0\u8c03\u6574\u5206\u6570\u6216\u5207\u6362\u4eba\u683c\u7c7b\u578b\u3002",
