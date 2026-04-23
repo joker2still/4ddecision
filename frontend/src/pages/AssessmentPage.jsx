@@ -174,6 +174,7 @@ export default function AssessmentPage() {
           <div className="panel-item">
             <strong>{copy.assessment.past}</strong>
             <p className="helper-text">{copy.assessment.pastDescription}</p>
+            <p className="helper-text">{copy.assessment.pastDescriptionNote}</p>
           </div>
           <div className="panel-item">
             <strong>{copy.assessment.present}</strong>

@@ -36,6 +36,8 @@ const translations = {
       past: "Past",
       pastDescription:
         "Did I seriously plan to do this before?",
+      pastDescriptionNote:
+        "(If this decision is not relevant in the past, then the default score is 50 points.)",
       present: "Present",
       presentDescription:
         "How strong is my desire to do this right now?",
@@ -102,13 +104,15 @@ const translations = {
       guide: "\u8bf4\u660e",
       past: "\u8fc7\u53bb",
       pastDescription:
-        "\u6211\u4e4b\u524d\u662f\u5426\u8ba4\u771f\u6253\u7b97\u8fc7\u505a\u8fd9\u4ef6\u4e8b",
+        "\u6211\u4e4b\u524d\u662f\u5426\u8ba4\u771f\u6253\u7b97\u8fc7\u505a\u8fd9\u4ef6\u4e8b\uFF1F",
+      pastDescriptionNote:
+        "\uff08\u82e5\u6b64\u51b3\u5b9a\u8fc7\u53bb\u65e0\u5173\uff0c\u5219\u9075\u5faa\u9ed8\u8ba450\u5206\u3002\uff09",
       present: "\u73b0\u5728",
       presentDescription:
-        "\u6b64\u523b\u6211\u60f3\u505a\u8fd9\u4ef6\u4e8b\u7684\u610f\u613f\u6709\u591a\u5f3a\u70c8",
+        "\u6b64\u523b\u6211\u60f3\u505a\u8fd9\u4ef6\u4e8b\u7684\u610f\u613f\u6709\u591a\u5f3a\u70c8\uFF1F",
       future: "\u672a\u6765",
       futureDescription:
-        "\u957f\u671f\u6765\u770b\u6211\u4f1a\u4e0d\u4f1a\u611f\u8c22\u81ea\u5df1\u73b0\u5728\u505a\u4e86\u8fd9\u4ef6\u4e8b",
+        "\u957f\u671f\u6765\u770b\u6211\u4f1a\u4e0d\u4f1a\u611f\u8c22\u81ea\u5df1\u73b0\u5728\u505a\u4e86\u8fd9\u4ef6\u4e8b\uFF1F",
       rangeHint: "0 - 100",
     },
     result: {
