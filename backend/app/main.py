@@ -88,6 +88,7 @@ app.add_middleware(
         "http://127.0.0.1:5173",
         "https://4ddecision.vercel.app",
         "https://4ddecision.pages.dev",
+        "https://4ddecision.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
